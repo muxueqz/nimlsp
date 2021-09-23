@@ -28,7 +28,10 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install NimLSP
         uses: docker://nimlang/nim:latest
-        with:
-          entrypoint: /bin/sh
-          args: nimble install -y; cp -v /root/.nimble/bin/nimlsp ./nimlsp
+ #       with:
+#          entrypoint: /bin/sh
+        run: |
+          nimble install -y
+          cp -v /root/.nimble/bin/nimlsp ./nimlsp
+#          args: nimble install -y; cp -v /root/.nimble/bin/nimlsp ./nimlsp
 
