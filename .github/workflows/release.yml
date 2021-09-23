@@ -31,7 +31,7 @@ jobs:
         with:
 #          entrypoint: /bin/bash
           args: |
-           nimble install -y
+           nimble install -y ;
            cp -v /root/.nimble/bin/nimlsp ./nimlsp
 #        run: |
 #          nimble install -y
