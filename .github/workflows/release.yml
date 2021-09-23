@@ -47,3 +47,4 @@ jobs:
         # if: startsWith(github.ref, 'refs/tags/')
         with:
           files: nimlsp
+          tag_name: v0.3.2
