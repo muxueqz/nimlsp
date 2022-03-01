@@ -31,7 +31,7 @@ jobs:
         with:
 #          entrypoint: /bin/bash
           args: |
-           nimble build -y
+           nimble build -y -d:explicitSourcePath=/nim --path:/nim --path:/nim/nimsuggest
 #        run: |
 #          nimble install -y
 #          cp -v /root/.nimble/bin/nimlsp ./nimlsp
