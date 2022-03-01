@@ -45,7 +45,7 @@ To do the standard build run:
 
 .. code:: bash
 
-   nimble build
+   nimble build -d:explicitSourcePath=NIM_SOURCE_PATH --path:NIM_SOURCE_PATH --path:NIM_SOURCE_PATH/nimsuggest
 
 Or if you want debug output when ``nimlsp`` is running:
 
